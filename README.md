@@ -1,2 +1,2 @@
 # EscapeGame
-Pages pour un jeu d&lt;escape game
+Pages pour un jeu d'escape game
