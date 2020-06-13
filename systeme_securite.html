@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="https://unpkg.com/augmented-ui/augmented.css">
+      <link rel="stylesheet" type="text/css" href="./test.css"  />
+      <script type="text/javascript" src="./jquery-3.5.1.slim.min.js"></script>
+      <script type="text/javascript" src="./test.js"></script>
+    </head>
+    <body>
+      <div class="info">
+        <p>Système de sécurité enclenché<br>Verrouillage du bâtiment complété<br>Procédure de confinement activée...</p>
+        <p>Entrez le code de désactivation<span class="blink">_</span></p>
+      </div>
+        <div id=test>
+          <h2>Code de désactivation</h2>
+          <input id="validationCode" class="validationCode--base validationCode--6char" maxlength="6" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" disabled="disabled"> 
+        </div>
+
+        <div class="message_container hidden">
+          <div class="message" augmented-ui="exe tl-clip br-clip">
+            <div class="title" augmented-ui="exe tl-clip br-clip">Attention</div>
+            <p>Le code saisi est invalide. Il est impératif d'entrer le code au complet pour désactiver le système de confinement. Après 3 tentatives erronées, le système est programmé pour procéder à une diffusion de gaz toxique afin d'éliminer toute menace biologique dans le bâtiment.<p><br>
+            <p class='center'>Il vous reste <span id='essais'></span></p>
+            <p class="center"><a id="reset" class="brk-btn" type="button">Réessayer</a></p>
+          </div>
+        </div>
+
+        <div id="wrap" class="hidden">
+        <div class="container" id="progess">
+
+          <div class="sphere" id="sphere1"></div>
+          <div class="sphere" id="sphere2"></div>
+          <div class="sphere" id="sphere3"></div>
+          <div class="sphere" id="sphere4"></div>
+          <div class="sphere" id="sphere5"></div>
+          <div class="sphere" id="sphere6"></div>
+          <div class="sphere" id="sphere7"></div>
+          <div class="sphere" id="sphere8"></div>
+          <div class="sphere" id="sphere9"></div>
+          <div class="sphere" id="sphere10"></div>
+
+          <div class="clear"></div>
+          
+        </div><!-- progress -->
+          
+          <div class="shadow" id="shadow1"></div>
+          <div class="shadow" id="shadow2"></div>
+          <div class="shadow" id="shadow3"></div>
+          <div class="shadow" id="shadow4"></div>
+          <div class="shadow" id="shadow5"></div>
+          <div class="shadow" id="shadow6"></div>
+          <div class="shadow" id="shadow7"></div>
+          <div class="shadow" id="shadow8"></div>
+          <div class="shadow" id="shadow9"></div>
+          <div class="shadow" id="shadow10"></div>
+          
+        </div><!-- wrap -->
+
+        <div class="success hidden"><p class="blink">Système d'alarme désactivé</p></div>
+    </body>
+</html>
